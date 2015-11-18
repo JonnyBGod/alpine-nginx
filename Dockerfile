@@ -19,6 +19,7 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base bash \
         --sbin-path=/usr/local/sbin/nginx \
     && make \
     && make install \
+    && cd ~ \
     && rm -rf ${NGINX_VERSION} && rm ${NGINX_VERSION}.tar.gz \
     && rm -rf /etc/nginx/nginx.conf \
     && apk del make wget build-base \
