@@ -7,7 +7,6 @@ ENV NGINX_VERSION nginx-1.9.7
 RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base bash \
     && wget http://nginx.org/download/${NGINX_VERSION}.tar.gz \
     && tar -zxvf ${NGINX_VERSION}.tar.gz \
-    && ls -la \
     && cd ${NGINX_VERSION} \
     && ./configure \
         --with-http_ssl_module \
@@ -20,7 +19,7 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base bash \
         --sbin-path=/usr/local/sbin/nginx \
     && make \
     && make install \
-    && cd $HOME \
+    && cd / \
     && rm -rf ${NGINX_VERSION} && rm ${NGINX_VERSION}.tar.gz \
     && rm -rf /etc/nginx/nginx.conf \
     && apk del make wget build-base \
