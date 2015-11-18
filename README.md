@@ -1,7 +1,7 @@
 # alpine-nginx
 
-[![Docker Stars](https://img.shields.io/docker/stars/jonnybgod/alpine-nginx.svg)][hub]
-[![Docker Pulls](https://img.shields.io/docker/pulls/jonnybgod/alpine-nginx.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/jonnybgod/alpine-nginx.svg)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/jonnybgod/alpine-nginx.svg)]()
 
 Docker container with nginx pre-installed feat: ssl, http2, gzip
 
